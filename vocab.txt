@@ -79,3 +79,9 @@ backpack : A knapsack, sometimes mounted on a light frame, but always supported 
 📌 Example 5: Two to four filler leaves are laid end to end and rolled into the two halves of the binder leaves, making up what is called the bunch.
 ────────────────────────────────────────────
 
+📖 Word: chatroom
+🔤 Part of Speech: noun
+📝 Definition: Part of a website where visitors can converse in typed messages.
+
+────────────────────────────────────────────
+
