@@ -55,3 +55,10 @@ backpack : A knapsack, sometimes mounted on a light frame, but always supported 
 
 ────────────────────────────────────────────
 
+📖 Word: benefit
+🔤 Part of Speech: noun
+📝 Definition: An advantage; help or aid from something.
+
+📌 Example 1: It was for her benefit.   His benefit was free beer.
+────────────────────────────────────────────
+
