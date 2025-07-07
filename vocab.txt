@@ -62,3 +62,9 @@ backpack : A knapsack, sometimes mounted on a light frame, but always supported 
 📌 Example 1: It was for her benefit.   His benefit was free beer.
 ────────────────────────────────────────────
 
+📖 Word: bracelet
+🔤 Part of Speech: noun
+📝 Definition: A band or chain worn around the wrist as jewelry/jewellery or an ornament.
+
+────────────────────────────────────────────
+
