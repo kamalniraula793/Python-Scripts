@@ -26,4 +26,3 @@ def do_macro():
 
 if __name__ == "__main__":
     do_macro()
-

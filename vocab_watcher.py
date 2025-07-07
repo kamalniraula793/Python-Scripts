@@ -32,13 +32,10 @@ def get_main_meaning(word):
                 if definitions:
                     definition = definitions[0].get("definition", "No definition available")
                     examples = [d.get("example") for d in definitions if d.get("example")]
-
-                    # collect synonyms from all definitions (not just first)
                     synonyms = set()
                     for d in definitions:
                         for syn in d.get("synonyms", []):
                             synonyms.add(syn)
-
                     return {
                         "partOfSpeech": part_of_speech,
                         "definition": definition,
@@ -59,8 +56,7 @@ def format_entry(word, data):
         lines.append(f"📌 Example {i}: {ex}")
 
     if data["synonyms"]:
-        syn_list = ", ".join(data["synonyms"])
-        lines.append(f"\n🔁 Synonyms: {syn_list}")
+        lines.append(f"\n🔁 Synonyms: {', '.join(data['synonyms'])}")
 
     lines.append("─" * 44)
     return "\n".join(lines) + "\n\n"
@@ -70,6 +66,7 @@ def append_to_file(formatted_text):
         f.write(formatted_text)
 
 def git_commit_and_push():
+    subprocess.run(["git", "pull", "--rebase"], cwd=REPO_PATH)
     subprocess.run(["git", "add", FILENAME], cwd=REPO_PATH)
     result = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=REPO_PATH)
     if result.returncode != 0:
